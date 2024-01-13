@@ -24,7 +24,7 @@ To get started with FoodEx, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/foodex.git
+   git clone https://github.com/chimdykekamsi/FoodEx.git
    cd foodex
    ```
 
