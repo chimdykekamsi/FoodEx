@@ -28,7 +28,7 @@ To get started with FoodEx, follow these steps:
    cd foodex
    ```
 
-2. Set up the virtual environment (optional but recommended):
+2. Set up the virtual environment :
 
    ```bash
    virtualenv venv
