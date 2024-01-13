@@ -29,7 +29,7 @@ To get started with FoodEx, follow these steps:
    ```
 
 2. Set up the virtual environment :
-
+   On the IDE preferably VSCode Run `cmd/ctrl` `shift` `p` To open the         command palette click Create Environment > Venv
    ```bash
    virtualenv venv
    source venv/bin/activate   # On Windows, use 'venv\Scripts\activate'
