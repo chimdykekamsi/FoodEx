@@ -30,18 +30,19 @@ To get started with FoodEx, follow these steps:
 
 2. Set up the virtual environment :
    On the IDE preferably VSCode Run `cmd/ctrl` `shift` `p` To open the         command palette click Create Environment > Venv
+   ofcourse python should be installed on your device
    ```bash
    virtualenv venv
    source venv/bin/activate   # On Windows, use 'venv\Scripts\activate'
    ```
 
-3. Install dependencies:
+4. Install dependencies:
 
    ```bash
    pip install -r config.txt
    ```
 
-4. Run the database setup script:
+5. Run the database setup script:
 
    ```bash
    python database.py
@@ -49,7 +50,7 @@ To get started with FoodEx, follow these steps:
 
    This script initializes the database tables, ensuring your FoodEx application is ready for use.
 
-5. Run the application:
+6. Run the application:
 
    ```bash
    python app.py
