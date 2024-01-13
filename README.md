@@ -29,11 +29,11 @@ To get started with FoodEx, follow these steps:
    ```
 
 2. Set up the virtual environment :
-   On the IDE preferably VSCode Run `cmd/ctrl` `shift` `p` To open the         command palette click Create Environment > Venv
-   ofcourse python should be installed on your device
    ```bash
+   pip install virtualenv
+   python -m virtualenv .venv
    virtualenv venv
-   source venv/bin/activate   # On Windows, use 'venv\Scripts\activate'
+   source .venv/bin/activate   # On Windows, use '.venv\Scripts\activate'
    ```
 
 4. Install dependencies:
