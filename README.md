@@ -38,7 +38,7 @@ To get started with FoodEx, follow these steps:
 3. Install dependencies:
 
    ```bash
-   pip install -r requirements.txt
+   pip install -r config.txt
    ```
 
 4. Run the database setup script:
