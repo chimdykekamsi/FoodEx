@@ -1,5 +1,3 @@
-Certainly! Here's how the markdown will look when viewed on Git:
-
 ---
 
 # FoodEx - Online Food Ordering System
