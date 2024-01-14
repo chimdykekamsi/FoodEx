@@ -1,11 +1,13 @@
 # auth/routes.py
-from flask import Blueprint, render_template, redirect, url_for
+from flask import Blueprint, render_template, redirect, url_for, request
 
 auth_blueprint = Blueprint('auth', __name__)
 
 @auth_blueprint.route('/login', methods=['GET', 'POST'])
 def login():
-    return render_template('auth/login.html')
+    if request.method == "GET":
+        return render_template('auth/login.html')
+    return
 
 @auth_blueprint.route('/register', methods=['GET', 'POST'])
 def register():
