@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from auth.routes import auth_blueprint
+from app.auth.routes import auth_blueprint
 
 
 app = Flask(__name__)

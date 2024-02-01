@@ -1,1 +1,270 @@
-Foodex Home Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Update paths to static files -->
+    <script src="{{ url_for('static', filename='scripts/style.css') }}" defer></script>
+    <script src="{{ url_for('static', filename='scripts/all.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='scripts/script1.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='scripts/style.css') }}">
+
+</head>
+<body>
+  <div class="body">
+    <section id="header">
+    <h1 class="font">FoodEx.</h1>
+    <!-- <input type="color" name="" id=""> -->
+        <div>
+            <ul id="navbar">
+                <li class="li"><a class="active" href="#banner">Home</a></li>
+                <li class="li"><a href="./shop.html">Restaurants</a></li>
+                <li class="li"><a class="about1" onclick="openAbout()">about</a></li>
+                <!-- <li class="li"><a href="#font">contact</a></li> -->
+                <li class="search">
+                    <button class="normal1 about1"><i class="fa fa-search"></i></button>
+                    <input type="text" name="" id="searchNav" placeholder="Search Your Dish Here">
+                </li>
+                <!-- <li class="li" id="lg-bag"><a href="#"><i class="fa fa-user-circle"></i></a></li> -->
+                <li class="li" id="lg-bag"><a href="/auth/login"><i class="fa fa-sign-in-alt"></i></a></li>
+            </ul>
+        </div>
+        
+        <div id="mobile">
+            <p id="close"><i  class="fa fa-times"></i></p>
+            <p id="bar2"><i  class="fa fa-user-circle i"></i></p>
+            <!-- <p id="bar2"><i  class="fa fa-sign-in-alt i"></i></p> -->
+            <p id="bar"><i   class="fas fa-outdent i" ></i></p>
+        </div>
+    </section>
+    <section id="hero">
+        <div class="df">
+            <div class="text">
+                <div class="txt">
+                    <h4>shop-in-offer</h4>
+                    <h2>Super value deals</h2>
+                    <h1>on all Dishes</h1>
+                    <p>Explore Through Our Variates of Restaurant</p>
+                    <button><a href="shop.htl">Order Now</a></button>
+                </div>
+            </div>
+            <img src="{{url_for('static',filename='asset/Images/banner/burger banner.jpg')}}" alt="">
+        </div>
+    </section>
+    <section id="feature" class="section-p1">
+    </section>
+    <div id="about" class="about">
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="about-overlay">
+            <h1>About FoodEx</h1>
+            <p>Established to revolutionize the dining experience, FoodEx emerged in 2021 as a cutting-edge technology platform. Our platform seamlessly connects customers, restaurant partners, and dedicated delivery partners, addressing a myriad of gastronomic needs.</p>
+
+            <p>At FoodEx, customers harness the power of our platform to explore and uncover a diverse range of restaurants. They can peruse customer-generated reviews, share their own experiences, and even upload photos. Ordering food for delivery, reserving a table, and making secure payments while dining-out have never been more convenient.</p>
+
+            <p>On the flip side, we equip restaurant partners with tailored marketing tools designed for the industry. This empowers them to engage and acquire customers effectively, fostering the growth of their businesses. Committed to providing a dependable and efficient last-mile delivery service, we operate Hyperpure—a one-stop procurement solution. Hyperpure supplies top-notch ingredients and kitchen products, ensuring quality for our restaurant partners.</p>
+
+            <p>FoodEx isn't just a platform; it's a comprehensive solution. For our delivery partners, we offer transparent and flexible earning opportunities, creating a symbiotic relationship that benefits everyone involved.</p>
+        </div>
+    </div>
+    <section id="banner" class="section-m1">
+        <h4>Join Us Now To Enjoy Our Services</h4>
+        <!-- <h1>Up to <span>70%  OFF</span> - All t-Shirts & Accessories</h1> -->
+        <h1>Get Your Grocery, Meat, Vegetables At Your Door step</h1>
+        <button class="normal">Explore More</button>
+        
+    </section>
+    <section id="product1" class="section-p1">
+        <h2>Top Restaurants</h2>
+        <p>Visit Our Most Valued Shops</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="../asset/Images/Restaurants/barbeque.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="star">
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                    </div>
+                </div>
+                <a href="#"><i class="fa fa-arrow-right cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="../asset/Images/Restaurants/barbeque1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="star">
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                    </div>
+                </div>
+                <a href="#"><i class="fa fa-arrow-right cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="../asset/Images/Restaurants/fishland.jpg" alt="">
+                
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="star">
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                    </div>
+                </div>
+                <a href="#"><i class="fa fa-arrow-right cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="../asset/Images/Restaurants/aroma.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="star">
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                    </div>
+                </div>
+                <a href="#"><i class="fa fa-arrow-right cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="../asset/Images/Restaurants/hitech.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="star">
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                    </div>
+                </div>
+                <a href="#"><i class="fa fa-arrow-right cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="../asset/Images/Restaurants/about_platform65.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="star">
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                    </div>
+                </div>
+                <a href="#"><i class="fa fa-arrow-right cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="../asset/Images/Restaurants/ksbakers.png" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="star">
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                    </div>
+                </div>
+                <a href="#"><i class="fa fa-arrow-right cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="../asset/Images/Restaurants/hotnspicy.jpg" alt="">
+               
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="star">
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                    </div>
+                </div>
+                <a href="#"><i class="fa fa-arrow-right cart"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="news" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For NewsLetters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" name="" id="newsletter" placeholder="Your email address">
+            <button class="normal"> Sign Up</button>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="footer">
+            <div class="col">
+                <a href="#"><h1 class="font logo"  id="font">FoodEx.</h1></a>
+                <h4>contact</h4>
+                <p><strong>Address:</strong> 16 Ossomari Fegge Onitsha, Anambra</p>
+                <p><strong>Phone:</strong> 08058812320 / 08035084458</p>
+                <p><strong>Hours:</strong> 10:00 - 18:00 , Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook i"></i>
+                        <i class="fab fa-twitter i"></i>
+                        <i class="fab fa-instagram i"></i>
+                        <i class="fab fa-pinterest-p i"></i>
+                        <i class="fab fa-youtube i"></i>
+                    </div>
+                </div>       
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Condition</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#" onclick="openAbout()">about</a>
+            </div>
+    
+            <div class="col install">
+                <h4>Install App</h4>  
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                    <img src="../asset/img/pay/app.jpg" alt="">
+                    <img src="../asset/img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment GateWays</p>
+            <img src="../asset/img/pay/pay.png" alt="">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024, FoodEx. Company</p>
+        </div>
+    </footer>
+  </div>
+
+
+</body>
+</html>
